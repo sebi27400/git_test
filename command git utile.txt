@@ -9,3 +9,5 @@ git commit -m "Initial commit"
 
 Ajoutez l'URL du dépôt distant
 git remote add origin https://github.com/sebi27400/git_test.git
+
+git pull --rebase origin master
