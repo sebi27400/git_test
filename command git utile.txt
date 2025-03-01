@@ -30,3 +30,26 @@ git add .
 git commit -m "Modifications sur modification_1"
 4. Pousser la branche vers le dépôt distant
 git push --set-upstream origin modification_1
+
+
+Pour faire un merge 
+1.Se placer sur la branche master
+git checkout master
+2. Récupérer les dernières modifications du dépôt distant (si nécessaire)
+git pull origin master
+
+3. Fusionner la branche modification_1 dans master
+git merge modification_1
+Si tout se passe bien, tu verras un message de confirmation.
+
+Si un conflit apparaît, Git t’indiquera quels fichiers sont en conflit. Tu devras les éditer manuellement, puis faire :
+git add .
+git commit -m "Résolution des conflits"
+
+4. Pousser les modifications sur GitHub
+git push origin master
+
+Si tu veux ensuite supprimer la branche localement (facultatif) :
+git branch -d modification_1
+Et sur GitHub :
+git push origin --delete modification_1
