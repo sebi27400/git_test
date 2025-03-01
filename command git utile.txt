@@ -15,3 +15,18 @@ git remote add origin https://github.com/sebi27400/git_test.git
 
 en cas de pb
 git pull --rebase origin master
+
+1. Créer la branche et y basculer
+git checkout -b modification_1
+
+2. Vérifier que tu es bien sur la nouvelle branche
+git branch
+La branche active sera marquée avec * modification_1.
+
+3. Faire tes modifications et les valider
+Ajoute tes fichiers et fais un commit :
+
+git add .
+git commit -m "Modifications sur modification_1"
+4. Pousser la branche vers le dépôt distant
+git push --set-upstream origin modification_1
