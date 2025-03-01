@@ -53,3 +53,5 @@ Si tu veux ensuite supprimer la branche localement (facultatif) :
 git branch -d modification_1
 Et sur GitHub :
 git push origin --delete modification_1
+
+Fin de la partie !!!!
